@@ -71,11 +71,9 @@ nav ul li a:hover::after{
     border-radius: 1rem;
     box-shadow: 0 0 30px #ff004f;
     background-color: #ff004f;
-}
-
-.download-btn a {
     color: white;
     text-decoration: none;
+    background-color: #ff004f;
 }
 .header-text h1{
     font-size: 60px;
