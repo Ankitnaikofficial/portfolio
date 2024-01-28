@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c80825c90e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.jpg" class="name">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>student</p>
+                <h1>Hi, i'm <span> Ankit Naik</span><br>From Goa-India</h1>
+            </div>
+        </div>
+        <!-- about -->
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ankit4.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ipsam rem delectus suscipit\
+                        nulla vero, temporibus sapiente! Modi, repudiandae et. Ab ullam quod non expedita quia alias et
+                        at sed </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Additional Courses')">Additional Courses</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>student</span><br> bca student</li>
+                            <li><span>UI/UX </span><br>Web/app Interface</li>
+                            <li><span>Web Development</span><br> Web Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Additional Courses">
+                        <ul>
+                            <li><span>2024 - Current</span><br> UI/UX at Tata Strive center farmagudi
+                                Ponda-Goa </li>
+                            <li><span>2021-2022</span><br>MS Office & tallay Erp</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024 - Current</span><br> Bachelor In Computer Application</li>
+                            <li><span>2020 </span><br>HSSC In Ecectronic Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------services--------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam asperiores dolorum vitae
+                            numquam saepe,
+                            eaque esse doloribus accusantium enim ducimus culpa vero temporibus, explicabo molestiae
+                            maxime ad. Cum, dolor quas.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>UI/UX Design</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam asperiores dolorum vitae
+                            numquam saepe,
+                            eaque esse doloribus accusantium enim ducimus culpa vero temporibus, explicabo molestiae
+                            maxime ad. Cum, dolor quas.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------portfolio---------- -->
+        <div id="project">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam asperiores dolorum vitae
+                            numquam saepe,
+                            eaque esse doloribus accusantium enim ducimus culpa vero temporibus, explicabo molestiae
+                            maxime ad. Cum, dolor quas.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link")
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+
+
+        </script>
+
+</body>
+
+</html>
