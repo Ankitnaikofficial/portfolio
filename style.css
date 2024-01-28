@@ -63,6 +63,20 @@ nav ul li a:hover::after{
     font-size: 30px;
 
 }
+.download-btn {
+    width: 200px;
+    height: 30px;
+    padding: 4px;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px #ff004f;
+    background-color: #ff004f;
+}
+
+.download-btn a {
+    color: white;
+    text-decoration: none;
+}
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
